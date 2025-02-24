@@ -13,7 +13,7 @@ public class MyDemoController extends BaseScaffold {
 
     @Override
     public String getMainTable() {
-        return "demo";
+        return "muyun_demo";
     }
 
     @Override

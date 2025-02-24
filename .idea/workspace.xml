@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba8dbceb-a87f-4d80-a1f8-66c65e49036c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/gradle.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-boot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/main/java/net/ximatai/muyun/starter/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/main/java/net/ximatai/muyun/starter/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/test/java/net/ximatai/muyun/demo/test/TestMyDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/test/java/net/ximatai/muyun/demo/test/TestMyDemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/test/java/net/ximatai/muyun/demo/test/testcontainers/PostgresTestResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/test/java/net/ximatai/muyun/demo/test/testcontainers/PostgresTestResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/net/ximatai/muyun/demo/DemoConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-demo-module/src/main/java/net/ximatai/muyun/demo/DemoConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/net/ximatai/muyun/demo/MyDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-demo-module/src/main/java/net/ximatai/muyun/demo/MyDemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +74,10 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -103,7 +102,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.TestMyDemoController.executor": "Run",
+    "JUnit.TestMyDemoController.testCreate.executor": "Run",
+    "Maven.muyun-boot [install].executor": "Run",
+    "Maven.muyun-demo [clean,install,-U].executor": "Run",
+    "Maven.muyun-demo [clean,package...].executor": "Run",
     "Maven.muyun-demo [clean].executor": "Run",
+    "Maven.muyun-demo [compile].executor": "Run",
+    "Maven.muyun-demo [install].executor": "Run",
+    "Maven.muyun-demo [package].executor": "Run",
+    "Maven.muyun-demo [quarkus:dev,-pl,muyun-boot...].executor": "Run",
+    "Maven.muyun-demo [test].executor": "Run",
+    "Maven.muyun-demo-module [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -113,7 +123,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/wangyu/repo/MuYunStarter",
+    "last_opened_file_path": "/Users/wangyu/repo/muyun-demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,15 +141,45 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Quarkus.MuYunStarter.boot.main">
-    <configuration default="true" type="JetRunConfigurationType">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn quarkus:dev -pl muyun-boot -am" />
+      <command value="mvn clean install -U" />
+      <command value="mvn clean package -Dquarkus.package.type=uber-jar " />
+      <command value="mvn compile quarkus:dev" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestMyDemoController.testCreate">
+    <configuration name="TestMyDemoController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="muyun-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.ximatai.muyun.demo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.ximatai.muyun.demo.test" />
+      <option name="MAIN_CLASS_NAME" value="net.ximatai.muyun.demo.test.TestMyDemoController" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
+    <configuration name="TestMyDemoController.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="muyun-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.ximatai.muyun.demo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.ximatai.muyun.demo.test" />
+      <option name="MAIN_CLASS_NAME" value="net.ximatai.muyun.demo.test.TestMyDemoController" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="MuYunStarter" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="muyun-demo" />
@@ -232,7 +272,7 @@
       </method>
     </configuration>
     <configuration name="boot" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
-      <module name="boot" />
+      <module name="muyun-boot" />
       <QsMavenRunConfiguration>
         <MavenSettings>
           <option name="myGeneralSettings" />
@@ -270,7 +310,7 @@
       </method>
     </configuration>
     <configuration name="demo" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
-      <module name="demo" />
+      <module name="muyun-demo-module" />
       <QsMavenRunConfiguration>
         <MavenSettings>
           <option name="myGeneralSettings" />
@@ -307,6 +347,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestMyDemoController.testCreate" />
+        <item itemvalue="JUnit.TestMyDemoController" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -328,11 +374,25 @@
       <workItem from="1740389938934" duration="137000" />
       <workItem from="1740390215815" duration="34000" />
       <workItem from="1740390254976" duration="2024000" />
+      <workItem from="1740392428832" duration="149000" />
+      <workItem from="1740392585369" duration="621000" />
+      <workItem from="1740399609797" duration="2601000" />
+      <workItem from="1740402231015" duration="291000" />
+      <workItem from="1740402531344" duration="4087000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.enterprise:jakarta.enterprise.cdi-api" />
+    <option featureType="dependencySupport" implementationName="java:io.quarkus:quarkus-core" />
+    <option featureType="dependencySupport" implementationName="java:io.smallrye.reactive:mutiny" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.jdbi:jdbi3-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
