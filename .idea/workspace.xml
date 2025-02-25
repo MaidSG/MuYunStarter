@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba8dbceb-a87f-4d80-a1f8-66c65e49036c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/muyun-boot/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/muyun-demo-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/main/java/net/ximatai/muyun/starter/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/main/java/net/ximatai/muyun/starter/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/test/java/net/ximatai/muyun/demo/test/TestMyDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/test/java/net/ximatai/muyun/demo/test/TestMyDemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/test/java/net/ximatai/muyun/demo/test/testcontainers/PostgresTestResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/test/java/net/ximatai/muyun/demo/test/testcontainers/PostgresTestResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/net/ximatai/muyun/demo/DemoConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-demo-module/src/main/java/net/ximatai/muyun/demo/DemoConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/net/ximatai/muyun/demo/MyDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-demo-module/src/main/java/net/ximatai/muyun/demo/MyDemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ba8dbceb-a87f-4d80-a1f8-66c65e49036c" name="Changes" comment="init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +88,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "JUnit.TestMyDemoController.executor": "Run",
     "JUnit.TestMyDemoController.testCreate.executor": "Run",
+    "Maven.muyun-boot [compile,quarkus:dev].executor": "Run",
     "Maven.muyun-boot [install].executor": "Run",
     "Maven.muyun-demo [clean,install,-U].executor": "Run",
     "Maven.muyun-demo [clean,package...].executor": "Run",
@@ -378,8 +363,17 @@
       <workItem from="1740392585369" duration="621000" />
       <workItem from="1740399609797" duration="2601000" />
       <workItem from="1740402231015" duration="291000" />
-      <workItem from="1740402531344" duration="4087000" />
+      <workItem from="1740402531344" duration="4362000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1740409906892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740409906892</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,6 +387,10 @@
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
     <option featureType="dependencySupport" implementationName="java:org.jdbi:jdbi3-core" />
     <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
