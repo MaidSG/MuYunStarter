@@ -42,6 +42,12 @@
             <version>${project.version}</version>
 <!--            <scope>compile</scope>-->
         </dependency>
+        <dependency>
+            <groupId>io.github.maidsg</groupId>
+            <artifactId>muyun-demo-ai</artifactId>
+            <version>${project.version}</version>
+<!--            <scope>compile</scope>-->
+        </dependency>
 
         <!-- 第三方库 -->
         <dependency>

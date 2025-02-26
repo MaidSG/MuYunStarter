@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba8dbceb-a87f-4d80-a1f8-66c65e49036c" name="Changes" comment="init" />
+    <list default="true" id="ba8dbceb-a87f-4d80-a1f8-66c65e49036c" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/java/io/github/maidsg/muyun/ai/ChildClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/java/io/github/maidsg/muyun/ai/CustomerSupportAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/java/io/github/maidsg/muyun/ai/CustomerSupportAgentWebSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/java/io/github/maidsg/muyun/ai/ImportmapResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/java/io/github/maidsg/muyun/ai/ParentClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/META-INF/resources/components/demo-chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/META-INF/resources/components/demo-title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/META-INF/resources/fonts/red-hat-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/META-INF/resources/icons/font-awesome-solid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/META-INF/resources/icons/font-awesome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/META-INF/resources/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muyun-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muyun-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-boot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muyun-demo-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-demo-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +60,19 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -90,25 +122,31 @@
     "JUnit.TestMyDemoController.testCreate.executor": "Run",
     "Maven.muyun-boot [compile,quarkus:dev].executor": "Run",
     "Maven.muyun-boot [install].executor": "Run",
+    "Maven.muyun-boot [package...].executor": "Run",
     "Maven.muyun-demo [clean,install,-U].executor": "Run",
     "Maven.muyun-demo [clean,package...].executor": "Run",
     "Maven.muyun-demo [clean].executor": "Run",
+    "Maven.muyun-demo [compile,quarkus:dev].executor": "Run",
     "Maven.muyun-demo [compile].executor": "Run",
     "Maven.muyun-demo [install].executor": "Run",
     "Maven.muyun-demo [package].executor": "Run",
     "Maven.muyun-demo [quarkus:dev,-pl,muyun-boot...].executor": "Run",
     "Maven.muyun-demo [test].executor": "Run",
+    "Maven.muyun-demo-ai [install].executor": "Run",
     "Maven.muyun-demo-module [install].executor": "Run",
+    "Quarkus.MuYunStarter.boot.main.executor": "Debug",
+    "Quarkus.boot.executor": "Debug",
+    "Quarkus.muyun-demo-ai.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature-langchain4j",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/wangyu/repo/muyun-demo",
+    "last_opened_file_path": "/Users/wangyu/repo/muyun-demo/muyun-demo-ai/src/main/resources/META-INF",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,12 +155,18 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.37625083",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "Debugger_Data_Views_Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/muyun-demo-ai/src/main/resources" />
+      <recent name="$PROJECT_DIR$/muyun-demo-ai/src/main/java/io/github/maidsg/muyun/ai" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -131,7 +175,16 @@
       <command value="mvn quarkus:dev -pl muyun-boot -am" />
       <command value="mvn clean install -U" />
       <command value="mvn clean package -Dquarkus.package.type=uber-jar " />
+      <command value="mvn package -Dquarkus.package.jar.type=uber-jar" />
+      <command value="mvn clean package -Dquarkus.package.jar.type=uber-jar" />
       <command value="mvn compile quarkus:dev" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="QuarkusRunConfigurationType" />
+      </set>
     </option>
   </component>
   <component name="RunManager" selected="JUnit.TestMyDemoController.testCreate">
@@ -166,8 +219,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MuYunStarter" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
-      <module name="muyun-demo" />
+    <configuration name="MuYunStarter.boot.main" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="muyun-boot" />
       <QsMavenRunConfiguration>
         <MavenSettings>
           <option name="myGeneralSettings" />
@@ -192,7 +245,7 @@
                 <list />
               </option>
               <option name="resolveToWorkspace" value="false" />
-              <option name="workingDirPath" value="$PROJECT_DIR$" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/muyun-boot" />
             </MavenRunnerParameters>
           </option>
         </MavenSettings>
@@ -200,32 +253,6 @@
         <emulateTerminal>true</emulateTerminal>
         <profile>dev</profile>
       </QsMavenRunConfiguration>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MuYunStarter.boot.main" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
-      <module name="MuYunStarter.boot.main" />
-      <QsGradleRunConfiguration>
-        <ExternalSystemSettings>
-          <option name="executionName" />
-          <option name="externalProjectPath" value="$PROJECT_DIR$/boot" />
-          <option name="externalSystemIdString" value="GRADLE" />
-          <option name="scriptParameters" />
-          <option name="taskDescriptions">
-            <list />
-          </option>
-          <option name="taskNames">
-            <list />
-          </option>
-          <option name="vmOptions" />
-        </ExternalSystemSettings>
-        <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-        <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-        <DebugAllEnabled>false</DebugAllEnabled>
-        <RunAsTest>false</RunAsTest>
-        <profile>dev</profile>
-      </QsGradleRunConfiguration>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,8 +283,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boot" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
-      <module name="muyun-boot" />
+    <configuration name="muyun-demo-ai" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="muyun-demo-ai" />
       <QsMavenRunConfiguration>
         <MavenSettings>
           <option name="myGeneralSettings" />
@@ -282,7 +309,7 @@
                 <list />
               </option>
               <option name="resolveToWorkspace" value="false" />
-              <option name="workingDirPath" value="$PROJECT_DIR$/boot" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/muyun-demo-ai" />
             </MavenRunnerParameters>
           </option>
         </MavenSettings>
@@ -294,44 +321,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
-      <module name="muyun-demo-module" />
-      <QsMavenRunConfiguration>
-        <MavenSettings>
-          <option name="myGeneralSettings" />
-          <option name="myRunnerSettings" />
-          <option name="myRunnerParameters">
-            <MavenRunnerParameters>
-              <option name="cmdOptions" />
-              <option name="profiles">
-                <set />
-              </option>
-              <option name="goals">
-                <list>
-                  <option value="quarkus:dev" />
-                </list>
-              </option>
-              <option name="multimoduleDir" />
-              <option name="pomFileName" value="pom.xml" />
-              <option name="profilesMap">
-                <map />
-              </option>
-              <option name="projectsCmdOptionValues">
-                <list />
-              </option>
-              <option name="resolveToWorkspace" value="false" />
-              <option name="workingDirPath" value="$PROJECT_DIR$/demo" />
-            </MavenRunnerParameters>
-          </option>
-        </MavenSettings>
-        <targetMavenLocalRepo />
-        <emulateTerminal>true</emulateTerminal>
-        <profile>dev</profile>
-      </QsMavenRunConfiguration>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestMyDemoController" />
+      <item itemvalue="JUnit.TestMyDemoController.testCreate" />
+      <item itemvalue="Quarkus.muyun-demo-ai" />
+      <item itemvalue="Quarkus.MuYunStarter.boot.main" />
+      <item itemvalue="Quarkus.MuYunStarter.demo.main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestMyDemoController.testCreate" />
@@ -364,6 +360,13 @@
       <workItem from="1740399609797" duration="2601000" />
       <workItem from="1740402231015" duration="291000" />
       <workItem from="1740402531344" duration="4362000" />
+      <workItem from="1740452779572" duration="5285000" />
+      <workItem from="1740479110784" duration="743000" />
+      <workItem from="1740486686691" duration="11787000" />
+      <workItem from="1740500636059" duration="1325000" />
+      <workItem from="1740502119442" duration="828000" />
+      <workItem from="1740533699098" duration="1000" />
+      <workItem from="1740534432537" duration="3736000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -373,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740409906892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1740461990000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740461990000</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +399,17 @@
     <option featureType="dependencySupport" implementationName="java:org.jdbi:jdbi3-core" />
     <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
@@ -395,5 +417,37 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/localrepo/io/quarkus/resteasy/reactive/resteasy-reactive-common-processor/3.18.4/resteasy-reactive-common-processor-3.18.4.jar!/org/jboss/resteasy/reactive/common/processor/scanning/ResourceScanningResult.class</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/localrepo/io/quarkus/resteasy/reactive/resteasy-reactive-common-processor/3.18.4/resteasy-reactive-common-processor-3.18.4-sources.jar!/org/jboss/resteasy/reactive/common/processor/scanning/ResteasyReactiveScanner.java</url>
+          <line>296</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/localrepo/io/quarkus/resteasy/reactive/resteasy-reactive-common-processor/3.18.4/resteasy-reactive-common-processor-3.18.4-sources.jar!/org/jboss/resteasy/reactive/common/processor/scanning/ResteasyReactiveScanner.java</url>
+          <line>308</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/localrepo/io/quarkus/resteasy/reactive/resteasy-reactive-common-processor/3.18.4/resteasy-reactive-common-processor-3.18.4-sources.jar!/org/jboss/resteasy/reactive/common/processor/scanning/ResteasyReactiveScanner.java</url>
+          <line>310</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <condition expression="clientInterfaces.get(interfaceName) == null" language="JAVA" />
+          <url>jar://$USER_HOME$/localrepo/io/quarkus/resteasy/reactive/resteasy-reactive-common-processor/3.18.4/resteasy-reactive-common-processor-3.18.4-sources.jar!/org/jboss/resteasy/reactive/common/processor/scanning/ResteasyReactiveScanner.java</url>
+          <line>406</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

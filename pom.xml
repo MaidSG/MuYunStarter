@@ -13,6 +13,7 @@
     <modules>
         <module>muyun-boot</module>
         <module>muyun-demo-module</module>
+        <module>muyun-demo-ai</module>
     </modules>
 
     <!-- 统一 Java 版本配置 -->
@@ -22,15 +23,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <quarkus.version>3.17.4</quarkus.version>
+        <quarkus.version>3.18.4</quarkus.version>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.17.4</quarkus.platform.version>
+        <quarkus.platform.version>3.18.4</quarkus.platform.version>
         <muyun.version>0.1.9</muyun.version>
+        <muyun-core.version>0.1.10</muyun-core.version>
         <caffeine.version>3.1.8</caffeine.version>
         <testcontainers.version>1.20.3</testcontainers.version>
         <rest-assured.version>5.4.0</rest-assured.version>
         <surefire-plugin.version>3.5.0</surefire-plugin.version>
+        <quarkus-langchain4j.version>0.24.0</quarkus-langchain4j.version>
     </properties>
 
     <!-- 依赖管理 -->
@@ -49,7 +52,7 @@
             <dependency>
                 <groupId>net.ximatai.muyun</groupId>
                 <artifactId>muyun-core</artifactId>
-                <version>${muyun.version}</version>
+                <version>${muyun-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.ximatai.muyun</groupId>
@@ -86,63 +89,70 @@
                 <artifactId>rest-assured</artifactId>
                 <version>${rest-assured.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.quarkiverse.langchain4j</groupId>
+                <artifactId>quarkus-langchain4j-bom</artifactId>
+                <version>${quarkus-langchain4j.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
         </dependencies>
 
     </dependencyManagement>
 
 
-    <!-- 构建配置 -->
-    <build>
-        <plugins>
-            <!-- 编译器插件 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <configuration>
-                    <release>${java.version}</release>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>io.smallrye</groupId>
-                <artifactId>jandex-maven-plugin</artifactId>
-                <version>3.2.1</version>
-                <executions>
-                    <execution>
-                        <id>make-index</id>
-                        <goals>
-                            <goal>jandex</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <!-- 测试内存配置（等效于 Gradle 的 maxHeapSize = "2g"） -->
+<!--    &lt;!&ndash; 构建配置 &ndash;&gt;-->
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            &lt;!&ndash; 编译器插件 &ndash;&gt;-->
 <!--            <plugin>-->
 <!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>3.2.2</version>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.11.0</version>-->
 <!--                <configuration>-->
-<!--                    <argLine>-Xmx2g</argLine>-->
+<!--                    <release>${java.version}</release>-->
 <!--                </configuration>-->
 <!--            </plugin>-->
-            <!-- Quarkus Maven 插件 -->
-            <plugin>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-maven-plugin</artifactId>
-                <version>${quarkus.version}</version>
-                <extensions>true</extensions>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build</goal>
-                            <goal>generate-code</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+<!--            <plugin>-->
+<!--                <groupId>io.smallrye</groupId>-->
+<!--                <artifactId>jandex-maven-plugin</artifactId>-->
+<!--                <version>3.2.1</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>make-index</id>-->
+<!--                        <goals>-->
+<!--                            <goal>jandex</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash; 测试内存配置（等效于 Gradle 的 maxHeapSize = "2g"） &ndash;&gt;-->
+<!--&lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;                <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <version>3.2.2</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                <configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <argLine>-Xmx2g</argLine>&ndash;&gt;-->
+<!--&lt;!&ndash;                </configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;            </plugin>&ndash;&gt;-->
+<!--            &lt;!&ndash; Quarkus Maven 插件 &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>io.quarkus</groupId>-->
+<!--                <artifactId>quarkus-maven-plugin</artifactId>-->
+<!--                <version>${quarkus.version}</version>-->
+<!--                <extensions>true</extensions>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>build</goal>-->
+<!--                            <goal>generate-code</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
     <!-- 仓库配置（等效于 Gradle 的 repositories） -->
     <repositories>
