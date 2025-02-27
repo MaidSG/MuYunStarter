@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Quarkus" url="file://$PROJECT_DIR$/muyun-boot" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/muyun-demo-ai" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/muyun-demo-module" />
+    <file type="Qute" url="file://$PROJECT_DIR$/muyun-boot" />
+    <file type="Qute" url="file://$PROJECT_DIR$/muyun-demo-ai" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
