@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba8dbceb-a87f-4d80-a1f8-66c65e49036c" name="Changes" comment="init">
+    <list default="true" id="ba8dbceb-a87f-4d80-a1f8-66c65e49036c" name="Changes" comment="stupid fk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/muyun-demo-ai/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +111,7 @@
     "Maven.muyun-boot [package...].executor": "Run",
     "Maven.muyun-demo [clean,install,-U].executor": "Run",
     "Maven.muyun-demo [clean,package...].executor": "Run",
+    "Maven.muyun-demo [clean,package].executor": "Run",
     "Maven.muyun-demo [clean].executor": "Run",
     "Maven.muyun-demo [compile,quarkus:dev].executor": "Run",
     "Maven.muyun-demo [compile].executor": "Run",
@@ -360,7 +360,7 @@
       <workItem from="1740882806240" duration="599000" />
       <workItem from="1740965433847" duration="607000" />
       <workItem from="1741053690107" duration="605000" />
-      <workItem from="1741077130364" duration="945000" />
+      <workItem from="1741077130364" duration="4068000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -386,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740643878927</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="stupid fk">
+      <option name="closed" value="true" />
+      <created>1741081165352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741081165352</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +422,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="stupid fk" />
+    <option name="LAST_COMMIT_MESSAGE" value="stupid fk" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
