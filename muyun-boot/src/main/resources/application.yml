@@ -11,6 +11,10 @@
 #    - prefix: /web/
 #      url: http://localhost:8001/web/
 quarkus:
+  native:
+    resources:
+      includes: /**
+      excludes: /META-INF/resources/**
   http:
     port: 8080
   rest:

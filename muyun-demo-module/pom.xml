@@ -14,6 +14,11 @@
     <name>muyun-demo-module</name>
     <packaging>jar</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
     <!-- 子模块的依赖在此处声明 -->
     <dependencies>
         <!-- MuYun 核心依赖 -->

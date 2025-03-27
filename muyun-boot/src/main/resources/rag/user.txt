@@ -1,0 +1,125 @@
+1. API 接口文档（JSON 格式）
+{
+  "endpoint": "/api/v1/users",
+  "method": "POST",
+  "description": "创建新用户账户",
+  "parameters": [
+    {
+      "name": "username",
+      "type": "string",
+      "required": true,
+      "constraints": "长度4-20字符，仅允许字母数字"
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "format": "bcrypt",
+      "minStrength": 8
+    }
+  ],
+  "response": {
+    "201": {
+      "schema": {
+        "userId": "UUID",
+        "createdAt": "ISO8601"
+      }
+    },
+    "400": {
+      "errorCode": "INVALID_INPUT",
+      "message": "请求参数格式错误"
+    }
+  }
+}
+
+2. 错误日志模板（文本格式）
+[ERROR] 2024-03-15T14:22:31.456Z 8a3d7f2e | PROCESSOR-002
+▶ Module: payment-service
+▶ Level: CRITICAL
+▶ Description: 支付事务超时（>3000ms）
+▶ Context:
+   - orderId: "TX-20240315-1142"
+   - amount: 499.99 USD
+   - retryCount: 3
+▶ Solution:
+   1. 检查支付网关连接状态
+   2. 验证数据库连接池配置
+   3. 查看circuit breaker状态
+
+3. 代码审查清单（Markdown 格式）
+## 前端代码审查要点
+### 1. 性能优化
+- [ ] 图片资源是否使用WebP格式
+- [ ] 第三方库是否按需加载（Tree Shaking）
+- [ ] 避免Vue/React不必要的重新渲染
+
+### 2. 安全规范
+- [ ] 用户输入是否经过XSS过滤
+- [ ] API密钥是否存储在环境变量
+- [ ] 敏感操作是否有二次验证
+
+### 3. 可访问性
+- [ ] 所有图片具有alt属性
+- [ ] 颜色对比度符合WCAG 2.1 AA标准
+
+4. 微服务架构图描述（文本 + 伪代码）
+服务拓扑：
+- API Gateway (Kong)
+  ↳ 路由至 auth-service / order-service
+- auth-service (JWT签发)
+  ↳ 依赖 Redis 缓存令牌
+- order-service (处理订单)
+  ↳ 发送领域事件到 Kafka Topic: order_events
+  ↳ 使用Saga模式管理分布式事务
+
+通信协议：
+| 服务间调用 | gRPC (Protocol Buffers) |
+| 客户端通信 | REST/JSON over HTTPS |
+
+数据库分片策略：
+# 伪代码示例
+def shard_key(user_id):
+    return hash(user_id) % 1024
+
+
+5. Docker Compose 模板（YAML 格式）
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  redis:
+    image: redis:7
+    command: redis-server --save 60 1 --loglevel warning
+    ports:
+      - "6379:6379"
+
+volumes:
+  pgdata:
+
+networks:
+  backend:
+    driver: bridge
+
+6. 国际化文案配置（JSON + 注释）
+{
+  "errorMessages": {
+    // 用户登录失败提示
+    "LOGIN_FAILED": {
+      "en": "Invalid credentials. Please try again.",
+      "zh-CN": "认证失败，请检查用户名和密码",
+      "retryCount": 3
+    },
+    "SESSION_EXPIRED": {
+      "en": "Your session has expired",
+      "ja": "セッションの有効期限が切れました"
+    }
+  }
+}
+
